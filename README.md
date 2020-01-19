@@ -3,7 +3,7 @@ built on win8<br>
 first upload test<br>
 ------------------<br>
 Cel:	zrobić prostą aplikację imitującą tryb multiplayer
-	oparty na serwerze napisanym w java (bez swingów itp)
+	oparty na serwerze napisanym w java (bez springów itp)
 	przy użyciu js, a konkretnie three.js. To będą proste
 	obiekty typu box, ważniejsze jest po prostu zbudowanie
 	prostego serwera który ma zbierać dane na temat pozycji
