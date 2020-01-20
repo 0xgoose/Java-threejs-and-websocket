@@ -43,5 +43,14 @@ Cel:	zrobić prostą aplikację imitującą tryb multiplayer
 	klawisza będzie wysłane coś na serwer, a tam na bieżąco
 	samo będzie wyświetlało kolejne linie tej wiadomości.
 	Ale tak się nie dzieje...
-	
+	<br>
+	<br>
+	Ok, chyba rozwiązałem problem. Chyba dlatego że to połaczenie
+	TCP potrzebna była odpowiedź od aplikacji, czyli dodałem 
+	po metodzie POST metodę GET, która odbiera coś tam od serwera
+	i dzięki temu pętla działa jak powinna. Są lagi, ale dobra,
+	wazne że coś działa. Teraz tylko napisać na szybko serwer
+	oparty na thread, thread pool itd. Potem trzeba będzie 
+	przerobić, a właściwie dopisać metody i funkcje które będą
+	tworzyły obiekty i zmieniały pozycje na scenie. Ale po kolei.
 	

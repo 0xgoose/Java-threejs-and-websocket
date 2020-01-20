@@ -11,14 +11,23 @@ var camera, scene, renderer;
                     var data = _position.x;
                     $.ajax({
                         url: 'http://localhost:59091',
-                        type: 'POST',
+						type: 'POST',
+						//async: true,
                         data: { data: data },
                         //data: $(window)._position,
                         success: function(result) {
                             console.log('the data was successfully sent to the server');
                             //return data;
                         }
-                    });
+					});
+					$.ajax({
+						url: 'http://localhost:59091',
+						type: 'GET',
+						success: function(res) {
+							console.log(res);
+							//alert(res);
+						}
+					});
                     });
 			
 			init();
