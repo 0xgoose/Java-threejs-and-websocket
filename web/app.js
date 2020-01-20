@@ -8,12 +8,17 @@ var camera, scene, renderer;
 			
 			 // write to file test
 				    $(window).keypress(function (e) {
-                    var data = _position.x;
+                    var data = _position;
                     $.ajax({
                         url: 'http://localhost:59091',
 						type: 'POST',
 						//async: true,
-                        data: { data: data },
+                        data: { 
+							id: lookAtObjectId, 
+							x: _position.x, 
+							y: _position.y, 
+							z: _position.z,  
+						},
                         //data: $(window)._position,
                         success: function(result) {
                             console.log('the data was successfully sent to the server');

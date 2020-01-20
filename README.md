@@ -53,4 +53,14 @@ Cel:	zrobić prostą aplikację imitującą tryb multiplayer
 	oparty na thread, thread pool itd. Potem trzeba będzie 
 	przerobić, a właściwie dopisać metody i funkcje które będą
 	tworzyły obiekty i zmieniały pozycje na scenie. Ale po kolei.
-	
+	<br>
+	<br>
+	Kolejna modyfikacja, dodałem counter i w kodzie serwera java.
+	Żeby widzieć na której linii jest data. Okazuje się że jest
+	na 11, więc taki warunek dałem. Następnie zmieniłem trochę
+	plik app.js, zamiast tylko pozycji x, teraz przekazywane są
+	id, x, y, z obiektu. Ale to tylko testowo. To trzeba będzie
+	pewnie inaczej zrobić. Ok, teraz czas na pokombinowanie
+	z thread pool w java. Akurat to nie jest problem, tylko jeszcze
+	nie wiem jak przekazywać tam instrukcje które będą
+	aktualizowały stan sceny, heh.

@@ -20,17 +20,23 @@ public class Server {
             System.out.println("The date server is running...");
             BufferedReader in;
             String inputLine;
+            int i = 0;
             while (true) {
                 try (Socket socket = listener.accept()) {
                     final PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
-                    out.println(new Date().toString());
+                    out.println(new Date().toString()); 
+
                     in = new BufferedReader(
                         new InputStreamReader(socket.getInputStream()));
 
                         while ((inputLine = in.readLine()) != null) {
-                            System.out.println(inputLine);
-                            
+                            if (i == 11)
+                            System.out.println(i + " ===> " + inputLine);
+                            i++;
                         }
+                        
+                     i = 0;   
+                        
                     //System.out.println(in.());
                     //out.println(new Date().toString());
                 }
