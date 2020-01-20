@@ -15,8 +15,33 @@ Cel:	zrobić prostą aplikację imitującą tryb multiplayer
 	i aplikacja przypominająca FPS. Do tej pory nie robiłem
 	nawet prostej aplikacji tego typu. To nie jest jakieś
 	wyzwanie dla mnie, kwestia zmobilizowania się żeby to
-	napisać, z tym jest niestety ciężej u mnie teraz ;/
+	napisać, z tym jest niestety ciężej u mnie teraz ;/<br>
+	Pytanie, ile czasu zajmie mi ogarnięcie tego 'prostego
+	tematu' ?! 
+	<br>
+	<br>
+	Ok, coś między czasie zrobiłem, ale jest problem z 
+	odczytywaniem POST skanerem. Wypisuje tylko jedną linie
+	i koniec, dopiero odświeżenie strony wysyła kolejne
+	informacje. W konsoli przeglądarki (F12) widać że przy
+	naciskaniu kalwisza jest ciągle wysyłana informacja
+	metodą POST. Więc problem leży po stronie serwera. Jest
+	źle napisany. Akurat ten fragment kodu pisałem na Ubuntu.
+	I tam też testowałem. Teraz przełączyłem sie na Win8,
+	i widzę kolejny błąd.
+	<br>
+	Zablokowano żądanie do zasobu innego pochodzenia: zasady 
+	„Same Origin Policy” nie pozwalają wczytywać zdalnych zasobów 
+	z „http://localhost:59091/” (nieudane żądanie CORS).
+	<br>
+	Przez co w ogóle nie dostaję komunikatów na serwer, tj w
+	konsoli tak jak to było na Ubuntu. Ale w sumie już nie
+	wiem czy czegoś nie pozmieniałem teraz w kodzie. Jeszcze
+	raz trzeba to będzie sprawdzić na Ubuntu. 
+	W każdym razie serwer nie odbiera komunikatów z danymi
+	tak jak tego oczekiwałem, że przy każdym wciśnięciu 
+	klawisza będzie wysłane coś na serwer, a tam na bieżąco
+	samo będzie wyświetlało kolejne linie tej wiadomości.
+	Ale tak się nie dzieje...
 	
-	Pytanie, ile czasu zajmie mi ogarnięcie tego "prostego
-	tematu" ?! 
-
+	
